@@ -4,8 +4,7 @@
 	<title>Person Profile</title>
 </head>
 <body>
-    <form>
-    
+    <form method = "POST" action="personProfileValidation.php">
 <table width ="400px"  border= "1" cellspacing = "0">
 
     <tr height="35px">
@@ -29,7 +28,7 @@
         </td>
 
         <td width = "80px">
-            <input type="text" name="first_name"  > <br>
+            <input type="text" name="name"  > <br>
             
         </td>
 
@@ -54,9 +53,11 @@
 
         <td width = "40px"> Gender </td>
         <td> 
-            <input type="radio" name="gender"  > Male 
-			<input type="radio" name="gender"  > Female
-            <input type="radio" name="gender"  > other <br> </td>
+            <input type="radio" name="gender" value= "Male" > Male
+            <input type="radio" name="gender"  value="Female" > Female
+            <input type="radio" name="gender" value="Other" > Other <br> 
+           
+             </td>
 
         <td width = "10px">  </td>
      
@@ -74,16 +75,18 @@
 
         <td width = "40px"> Blood Group </td>
         <td  width ="80px">  
-            <select name="blood_group" >
-            
-            <option value="">B+</option>
-            <option value="">O+</option>
-            <option value="">AB+</option>
-            <option value="">A-</option>
-            <option value="">B-</option>
-            <option value="">O-</option>
-            <option value="">AB-</option> 
-            <option value="" selected>A+</option> <br>
+            <select id="group" name="group" >
+                    
+                <option value="" >Select any group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                </select> <br>
         </select> 
      </td>
 
@@ -95,10 +98,12 @@
 
         <td width = "40px"> Degree</td>
         <td width ="80px">
-            <input type="checkbox" name="dept"> SSC
-            <input type="checkbox" name="dept"> HSC
-            <input type="checkbox" name="dept"> BSc.
-            <input type="checkbox" name="dept"> MSc.<br> </td>
+            
+            <input type="checkbox" name="d1[]" value="SSC"> SSC
+            <input type="checkbox" name="d1[]" value="HSC"> HSC
+            <input type="checkbox" name="d1[]" value="BSc"> BSc 
+            <input type="checkbox" name="d1[]" value="MSc"> MSc
+            
         <td width="10px"> </td>
         
 
@@ -134,6 +139,6 @@
 
 
 </table>
-</form>
+    </form>
 </body>
 </html>
