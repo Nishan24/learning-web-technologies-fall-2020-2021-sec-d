@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>XCompany - Home</title>
+   
+    <title>HomePage</title>
 </head>
 <body>
     
     <form action="">
         
-        <table border="2" width="60%">
+        <table border="2" width="80%">
             
             <tr>
                 
@@ -40,7 +40,7 @@
             
             <tr>
                 
-                <td colspan="2" align="center"><p>Copyright &#169; 2017</p></td>
+			<td   colspan ="2" align ="center" >    copyright   @ 2017                 </td>
                 
             </tr>
             
