@@ -1,149 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Person Profile</title>
+   
+    <title>Registration form</title>
 </head>
 <body>
-    <form method = "POST" action="personProfileValidation.php">
-
-
-    <fieldset>
-    <legend>Registration</legend>
-<table width ="400px"  border= "1" cellspacing = "0">
-
-    <tr height="35px">
-
-        <td colspan="3" align="center"> 
-            <h1> Person Profile </h1>
-
-        </td>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+    
+    <form action="">
         
-        
-
-    </tr>
-
-    <tr height="35px">
-
-        <td width = "40px"> 
+        <table border="2" width="80%">
             
-            Name 
-
-
-        </td>
-
-        <td width = "80px">
-            <input type="text" name="name"  > <br>
-            
-        </td>
-
-        <td width = "10px"> 
-           
-
-        </td>
-        
-
-    </tr>
-
-    <tr height="35px">
-
-        <td width = "40px">Email</td>
-        <td width ="80px"> <input type="email" name="email"  > <br> </td>
-        <td width="10px"> </td>
-        
-
-    </tr>
-
-    <tr height="35px">
-
-        <td width = "40px"> Gender </td>
-        <td> 
-            <input type="radio" name="gender" value= "Male" > Male
-            <input type="radio" name="gender"  value="Female" > Female
-            <input type="radio" name="gender" value="Other" > Other <br> 
-           
-             </td>
-
-        <td width = "10px">  </td>
-     
-    </tr>
-
-    <tr height="35px" >
-
-        <td width = "40px"> Date of birth </td>
-        <td width ="80px"> <input type="text" name="day" size="2">/<input type="text" name="month" size="2">/<input type="text" name="year" size="4"> (dd/mm/yy) </td>
-        <td  width="10px"> </td>
-        
-
-    </tr>
-    <tr height="35px">
-
-        <td width = "40px"> Blood Group </td>
-        <td  width ="80px">  
-            <select id="group" name="group" >
+            <tr>
+                
+                <td>
                     
-                <option value="" >Select any group</option>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                </select> <br>
-        </select> 
-     </td>
-
-        <td width="10px"> </td>
-        
-
-    </tr>
-    <tr  height="35px">
-
-        <td width = "40px"> Degree</td>
-        <td width ="80px">
+                    <img src="img/logo.png" alt="Logo">
+                    
+                   
+                    
+                </td>
+                
+                <td align="right">
+                    
+                    
+				<a href ="homepage.php" target="blank"> Home</a> |
+                        <a href ="Login.php" target="blank"> Login </a> |
+						<a href ="Registration" target="blank"> Registration </a> 
+                    
+                </td>
+ 
+                
+            </tr>
             
-            <input type="checkbox" name="d1[]" value="SSC"> SSC
-            <input type="checkbox" name="d1[]" value="HSC"> HSC
-            <input type="checkbox" name="d1[]" value="BSc"> BSc 
-            <input type="checkbox" name="d1[]" value="MSc"> MSc
+            <tr>
+                
+                <td colspan="2" align ="center" height=200px>
+                <form>
+                <fieldset  style="width: 400px;">
+                    <legend> Registration </legend>
+                  Name :  <input type="text" name="name"> <hr>
+                  Email : <input type="email" name="email"  > <button title="hint:sample@example.com"><b>i</b></button> <hr> 
+                 User Name :  <input type="text" name="UserName"> <hr>
+                 Confirm password:  <input type="text" name="password"> <hr>
+
+                 <fieldset style="width:400px">
+
+				<legend>GENDER</legend>
+
+				<input type="radio" name="gender" value= "<?=$m ?>" > Male
+				<input type="radio" name="gender"  value="<?=$f ?>" > Female
+				<input type="radio" name="gender" value="<?=$o ?>" > Other 
+				
+				
+			</fieldset>
+            <fieldset style="width: 400px;">
             
-        <td width="10px"> </td>
-        
 
-    </tr>
-    <tr height="35px">
+				<legend>DATE OF BIRTH</legend>
+				
+				
 
-        <td  width = "40px"> Photo </td>
-        <td width ="80px" colspan="2"> <input type="file" name="img"  > <br> </td>
-       
-        
-
-    </tr>
-    <tr height="35px">
-
-        <td colspan="3"> </td>
-       
-        
-
-    </tr>
-    <tr height="35px">
-
-        <td colspan="3" align="right">
-            <input type="submit" name="" value="submit">
-        <input type="reset" name="" value="reset"> 
-         
-            
-        
-        </td>
-       
-        
-
-    </tr>
+				<input type="text" name="day" size="2">/<input type="text" name="month" size="2">/<input type="text" name="year" size="4">(dd/mm/yyyy)
+			
+				
+			</fieldset>
+            <hr>
+            <input type="Submit" name="Submit" value="Submit">
+            <input type="Reset" name="Reset" value="Reset">
 
 
-</table>
+
+
 </fieldset>
+
+
+
+                </fieldset>
+                
+                </form>
+                
+                
+                
+                
+                
+                
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+			<td   colspan ="2" align ="center" >    copyright   @ 2017                 </td>
+                
+            </tr>
+            
+        </table>
+        
     </form>
+    
 </body>
 </html>
+

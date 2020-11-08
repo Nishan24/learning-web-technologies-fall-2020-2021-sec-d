@@ -5,6 +5,12 @@
     <title>HomePage</title>
 </head>
 <body>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
     
     <form action="">
         
@@ -50,3 +56,4 @@
     
 </body>
 </html>
+
