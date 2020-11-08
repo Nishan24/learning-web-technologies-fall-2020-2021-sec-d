@@ -42,22 +42,18 @@ table, th, td {
                 
                 <td colspan="2" align ="center" height=200px>
                 
-                <form>
-                <fieldset style="width: 400px;">
-                <legend>Login</legend>
-                User Name:<input type="text" name="UserName"> <br>
-                Password :<input type="text" name="password"> <hr>
-                <input type="checkbox" name="remember_me" value="1"> <b>Remember Me</b><br><br>
-                <input type="submit" name="submit" value="Submit"> <a href="forgot_password.php">Forgot Password</a>
-
-
-
-                </fieldset>
-                
-                
-                
+                <form action="forgot_password.php" method="post">
+                    
+                    <fieldset>
+                        
+                        <legend><b>FORGOT PASSWORD</b></legend>
+                        
+                        Enter Email&nbsp;:&nbsp;<input type="email" name="email"><hr>
+                        <input type="submit" name="submit" value="Submit"><br><br> 
+                        
+                    </fieldset>
+                    
                 </form>
-                
                 
                 
                 
