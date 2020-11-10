@@ -8,7 +8,7 @@
         if(!empty($_REQUEST['name']) and !empty($_REQUEST['password'])){
             
             $info = $_REQUEST['name']."|".$_REQUEST['password']."\n";
-            $myfile = fopen("login.txt", "w");
+            $myfile = fopen("password.txt", "w");
             fwrite($myfile, $info);
             fclose($myfile);
             echo "Registration Complete!";
