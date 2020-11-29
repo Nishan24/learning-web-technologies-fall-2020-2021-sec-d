@@ -12,17 +12,17 @@
 
 	 if(isset($_REQUEST['submit'])){
     
-		if(!empty($_REQUEST['userid']) && !empty($_REQUEST['name']) && !empty($_REQUEST['password']) && !empty($_REQUEST['email'])  && !empty($_REQUEST['usertype'])){
+		if(!empty($_REQUEST['id']) && !empty($_REQUEST['name']) && !empty($_REQUEST['password']) && !empty($_REQUEST['email'])  && !empty($_REQUEST['usertype'])){
 			
 
-			$userid = $_POST['userid'];
+			$id = $_POST['id'];
 	       $name = $_POST['name'];
 	       $password = $_POST['password'];
 	       $email = $_POST['email'];
 		   $usertype = $_POST['usertype'];
 		   $conn = getConnection();
 			
-		$query = "insert into users(id,username,password,email,type) values('$userid' , '$name' , '$password', '$email','usertype')";
+		$query = "insert into users(id,username,password,email,type) values('$id' , '$name' , '$password', '$email','$usertype')";
 
 
 		$run = mysqli_query($conn,$query) or die(mysqli_error($conn));
@@ -68,7 +68,7 @@
                     <tr>
                         <th>User ID</th>
                         <td>
-                            <input type="text" name="userid"  placeholder="Enter Your User ID">
+                            <input type="text" name="id"  placeholder="Enter Your User ID">
                            
                         </td>
 						
