@@ -3,9 +3,7 @@
 	require_once('../models/db.php');
 	require_once('../models/usersService.php');
 
-	//$conn = getConnection();
-	//$sql = "select * from users";
-	//$result = mysqli_query($conn, $sql);
+	
 
 
 
@@ -13,14 +11,14 @@
 
 	 if(isset($_REQUEST['submit'])){
     
-		if(!empty($_REQUEST['id']) && !empty($_REQUEST['name']) && !empty($_REQUEST['password']) && !empty($_REQUEST['email'])  && !empty($_REQUEST['usertype'])){
+		if(!empty($_REQUEST['name']) && !empty($_REQUEST['cno']) && !empty($_REQUEST['usertype']) && !empty($_REQUEST['password'])){
 			
             $user = array(
-                'id'=>$_POST['id'],
-                'username'=>$_POST['name'],
+                'name'=>$_POST['name'],
+                'cno'=>$_POST['cno'],
+                'username'=>$_POST['usertype'],
                 'password'=>$_POST['password'],
-                'email'=>$_POST['email'],
-                'type'=>$_POST['usertype']
+             
              
             );
            
@@ -62,7 +60,7 @@
         <title>ADD</title>
     </head>
     <body>
-        <form action="createUser.php" method="post" >
+        <form action="register.php" method="post" >
             <fieldset style="width: 600px;">
                 <legend><b>ADD USER<b></legend>
                 <table  cellpadding="10">
@@ -85,6 +83,15 @@
                         </td>
 
                     </tr>
+
+                    <tr>
+                        <th>Usertype</th>
+                        <td>
+                            <input type="radio" name="usertype" value="admin">Admin
+                            <input type="radio" name="usertype" value="buyer">Buyer
+                            
+                        </td>
+                    </tr>
 					
 					<tr>
                         <th>Password</th>
@@ -96,14 +103,7 @@
 					
                   
 					
-					<tr>
-                        <th>Usertype</th>
-                        <td>
-                            <input type="radio" name="usertype" value="admin">Admin
-                            <input type="radio" name="usertype" value="buyer">Buyer
-                            
-                        </td>
-                    </tr>
+					
 					
                     
                 </table>
