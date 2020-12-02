@@ -40,8 +40,8 @@
 					<td><?= $userlist[$i]['password'] ?></td>
 					
 					<td>
-						<a href="edit.php?id=<?= $userlist[$i]['id']  ?>"> EDIT</a> |
-						<a href="delete.php?id=<?= $userlist[$i]['id']  ?>"> DELETE</a> 
+						<a href="edit.php?name=<?= $userlist[$i]['name']  ?>"> EDIT</a> |
+						<a href="delete.php?name=<?= $userlist[$i]['name']  ?>"> DELETE</a> 
 					</td>
 				</tr>
 

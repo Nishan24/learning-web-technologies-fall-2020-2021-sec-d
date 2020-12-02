@@ -63,9 +63,9 @@
 	}
 
 
-	function deleteUsers($id){
+	function deleteUsers($name){
 		$conn = getConnection();
-		$sql = "delete from users where id=$id";
+		$sql = "delete from employees where name=$name";
 		$status = mysqli_query($conn, $sql);
 		if($status){
 			return true;
