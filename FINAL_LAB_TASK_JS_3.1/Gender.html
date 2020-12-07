@@ -11,9 +11,9 @@
 					<fieldset>
 
 				<legend>GENDER</legend>
-				<input type="radio" name="gender"  > Male 
-				<input type="radio" name="gender"  > Female
-				<input type="radio" name="gender"  > other <br>
+				<input type="radio" name="gender" id="male" >     Male 
+				<input type="radio" name="gender"  id = "female"> Female
+				<input type="radio" name="gender"  id="other" >  other <br>
 				
 			</fieldset>
 				</td>
@@ -21,8 +21,8 @@
             
         </table>
        
-        <input type="Submit" name="Submit" value="Submit">
+        <input type="Submit" name="Submit" value="Submit" onclick="genderValidation()">
 	</form>
-
+ <script type="text/javascript" src="validation.js"></script>
 </body>
 </html>
