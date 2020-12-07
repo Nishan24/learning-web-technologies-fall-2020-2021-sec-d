@@ -52,14 +52,21 @@ function nameValidation(){
 	
 	else {
         
-        alert("Name fill required");
+        window.alert("Name fill required");
         
 	}
 
 
+}
 
 
-
-
-
+function emailValidation(){
+    
+    let data = document.getElementById('email').value;
+    
+    if (data === "") {
+        
+        window.alert('Email is empty!');
+        
+    }
 }
