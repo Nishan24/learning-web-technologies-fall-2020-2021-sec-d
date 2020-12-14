@@ -22,10 +22,10 @@ function userRegistration($id, $username, $password, $email, $type){
     
 }
 
-function validateUser($username, $password){
+function validateUser($id, $password){
     
     $conn = getConnection('localhost', 'root', '', 'webtech');
-    $sql = "select * from user where username = '$username' and password = '$password'";
+    $sql = "select * from user where username = '$id' and password = '$password'";
     
     if(mysqli_query($conn, $sql)){
         

@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+   
     <title>Login</title>
 </head>
 <body>
-    <br><br><br><br><br><br>
+    <br>
     <center>
-        <h1>Login</h1>
-        <form action="controller/loginValidate.php" method="post">
+    <fieldset>
             
-            <input type="text" name="username" placeholder="Enter username..."><br><br>
-            <input type="password" name="password" placeholder="enter password..."> <br> <br>
-            <input type="submit" name="login" value="Login">
+            <legend><h1>Login</h1></legend>
+
+        <form action="php/loginCheck.php" method="post">
+            
+        User Id <br>
+                <input type="text" name="id"><br><br>
+                Password <br>
+                <input type="text" name="password"><br><br>
+                <input type="checkbox" name="rememberMe" value="Remember Me"> Remember Me
+                <hr>
+                <input type="submit" name="submit" value="Login"> <a href="view/registration.php">Register</a>
+                
+        
+                
             
         </form>
+        </fieldset>
+            
         
     </center>
-    
+    </body>
+    </html>
