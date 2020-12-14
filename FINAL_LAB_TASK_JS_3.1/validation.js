@@ -103,3 +103,18 @@ function degreeValidation(){
     
 }
 
+function bloodValidation(){
+    
+    if(document.getElementById("1").checked|| document.getElementById("2").checked|| document.getElementById("3").checked || document.getElementById("4").checked || document.getElementById("5").checked || document.getElementById("6").checked || document.getElementById("7").checked || document.getElementById("8").checked){
+        
+        alert("BloodGroup is selected");
+        
+    }
+    
+    else{
+        
+        alert("select one group");
+        
+    }
+    
+}
